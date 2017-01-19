@@ -8,7 +8,7 @@ $white: #fefefd;
 
 .ctaBar {
   padding: 20px 0;
-  height: 170px;
+  // height: 170px;
   // background-color: $light;
   display: flex;
   flex-direction: row;
@@ -18,7 +18,7 @@ $white: #fefefd;
     border: 1px solid $black;
     border-radius: 5px;
     background-color: $grey;
-    height: 100%;
+    height: 130px;
     width: 32%;
     display: flex;
     flex-direction: row;
@@ -62,11 +62,11 @@ $white: #fefefd;
   }
 }
 
-@media only screen and (min-width: 1100px) and (max-width: 1336px) {
+@media screen and (max-width: 1336px) {
   .ctaBar {
     // flex-direction: column;
     .ctaBar-btn {
-      height: 80%;
+      height: 90px;
       justify-content: center;
 
       div {
@@ -93,6 +93,88 @@ $white: #fefefd;
         .ctaRes {
           display: inline;
           color: $green;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 810px) {
+  .ctaBar {
+    height: 100px;
+
+
+    .ctaBar-btn {
+      height: 80%;
+
+      div {
+
+        p:first-child {
+          align-self: flex-start;
+
+          span {
+
+          }
+        }
+
+        p:nth-child(2) {
+          display: none;
+        }
+      }
+
+
+      .img-wrap {
+
+
+        img {
+
+        }
+
+        .ctaRes {
+
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ctaBar {
+    flex-direction: column;
+
+
+    .ctaBar-btn {
+      height: 50px;
+      width: 60%;
+      margin: 0 auto 15px;
+      background-color: $green;
+
+      div {
+        color: $white;
+
+        p:first-child {
+
+
+          span {
+
+          }
+        }
+
+        p:nth-child(2) {
+          display: none;
+        }
+      }
+
+
+      .img-wrap {
+
+
+        img {
+
+        }
+
+        .ctaRes {
+          color: $white;
         }
       }
     }

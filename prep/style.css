@@ -23,7 +23,6 @@ License: MIT
       height: 50px; }
   #header nav ul {
     list-style: none;
-    width: 60%;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
@@ -39,6 +38,11 @@ License: MIT
         color: #D12E52;
         transition: 0.2s; }
 
+@media only screen and (min-width: 700px) and (max-width: 980px) {
+  #header nav {
+    justify-content: space-between; }
+    #header nav ul li {
+      margin: 0 20px; } }
 #header .landing {
   background-image: url("./guy-alone.jpg");
   background-size: cover;
@@ -47,17 +51,35 @@ License: MIT
     width: 50%;
     padding-top: 50px;
     overflow: hidden; }
+    @media screen and (max-width: 1000px) {
+      #header .landing .videoWrap {
+        margin: 0 auto; } }
     #header .landing .videoWrap h4 {
       width: 540px;
       margin: 20px auto;
       font-size: 2rem;
       color: #fefefd; }
+      @media screen and (max-width: 1336px) {
+        #header .landing .videoWrap h4 {
+          width: 450px; } }
+      @media screen and (max-width: 1000px) {
+        #header .landing .videoWrap h4 {
+          text-align: center;
+          width: 100%; } }
     #header .landing .videoWrap iframe {
       display: block;
       height: 300px;
       width: 540px;
       border-radius: 2px;
       margin: 0 auto; }
+      @media screen and (max-width: 1336px) {
+        #header .landing .videoWrap iframe {
+          width: 450px;
+          height: 253px; } }
+      @media screen and (max-width: 900px) {
+        #header .landing .videoWrap iframe {
+          width: 360px;
+          height: 202.5px; } }
     #header .landing .videoWrap .arrowsBtn {
       margin: 15px 0;
       display: flex;
@@ -94,12 +116,8 @@ License: MIT
           text-align: center;
           margin: auto 10px auto 0; }
 
-@media only screen and (min-device-width: 1100px) and (max-device-width: 1336px) {
-  .landing .videoWrap iframe {
-    width: 300px; } }
 .ctaBar {
   padding: 20px 0;
-  height: 170px;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
@@ -107,7 +125,7 @@ License: MIT
     border: 1px solid #444545;
     border-radius: 5px;
     background-color: #c0bda5;
-    height: 100%;
+    height: 130px;
     width: 32%;
     display: flex;
     flex-direction: row;
@@ -134,9 +152,9 @@ License: MIT
       .ctaBar .ctaBar-btn .img-wrap .ctaRes {
         display: none; }
 
-@media only screen and (min-width: 1100px) and (max-width: 1336px) {
+@media screen and (max-width: 1336px) {
   .ctaBar .ctaBar-btn {
-    height: 80%;
+    height: 90px;
     justify-content: center; }
     .ctaBar .ctaBar-btn div {
       width: 60%; }
@@ -153,6 +171,29 @@ License: MIT
       .ctaBar .ctaBar-btn .img-wrap .ctaRes {
         display: inline;
         color: #37928E; } }
+@media only screen and (min-width: 768px) and (max-width: 810px) {
+  .ctaBar {
+    height: 100px; }
+    .ctaBar .ctaBar-btn {
+      height: 80%; }
+      .ctaBar .ctaBar-btn div p:first-child {
+        align-self: flex-start; }
+      .ctaBar .ctaBar-btn div p:nth-child(2) {
+        display: none; } }
+@media only screen and (max-width: 767px) {
+  .ctaBar {
+    flex-direction: column; }
+    .ctaBar .ctaBar-btn {
+      height: 50px;
+      width: 60%;
+      margin: 0 auto 15px;
+      background-color: #37928E; }
+      .ctaBar .ctaBar-btn div {
+        color: #fefefd; }
+        .ctaBar .ctaBar-btn div p:nth-child(2) {
+          display: none; }
+      .ctaBar .ctaBar-btn .img-wrap .ctaRes {
+        color: #fefefd; } }
 #content {
   width: 65%; }
   #content .post {
@@ -209,6 +250,26 @@ License: MIT
             margin-bottom: 10px;
             text-align: right; }
 
+@media only screen and (min-width: 1100px) and (max-width: 1336px) {
+  #content {
+    width: 72%; } }
+@media only screen and (min-width: 768px) and (max-width: 1099px) {
+  #content .post .post-wrap {
+    height: 80px; }
+    #content .post .post-wrap .post-summary {
+      width: 100%;
+      flex-direction: row-reverse;
+      justify-content: space-around; }
+      #content .post .post-wrap .post-summary .post-star {
+        width: 30%;
+        align-self: center; }
+        #content .post .post-wrap .post-summary .post-star i {
+          font-size: 3rem; }
+      #content .post .post-wrap .post-summary .post-details {
+        width: 60%;
+        align-self: center; }
+        #content .post .post-wrap .post-summary .post-details .entry {
+          display: none; } }
 #sidebar {
   width: 25%;
   background: linear-gradient(rgba(55, 146, 142, 0.1), rgba(55, 146, 142, 0.3)), url("./shattered.png");
@@ -292,6 +353,21 @@ License: MIT
           color: #37928E;
           align-self: center; }
 
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  #sidebar ul li .item-wrap a .featured-post-info h3 {
+    font-size: 1.1rem; }
+  #sidebar .note {
+    font-size: .8rem; }
+  #sidebar .subscribe div {
+    flex-direction: column;
+    margin-bottom: 15px; }
+    #sidebar .subscribe div input {
+      width: 85%;
+      font-size: 1rem;
+      align-self: center;
+      margin-bottom: 15px; }
+    #sidebar .subscribe div .submit-btn {
+      align-self: center; } }
 * {
   margin: 0;
   padding: 0;
@@ -312,5 +388,8 @@ body {
   flex-direction: row;
   justify-content: space-around;
   margin-top: 30px; }
+  @media screen and (max-width: 1336px) {
+    .posts-plus-sidebar {
+      margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */

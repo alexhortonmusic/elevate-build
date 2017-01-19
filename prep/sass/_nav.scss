@@ -30,7 +30,7 @@ $white: #fefefd;
 
   ul {
     list-style: none;
-    width: 60%;
+    // width: 60%;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
@@ -54,4 +54,35 @@ $white: #fefefd;
   }
 }
 
-@media only screen and (min-width: 1100px) and (max-width: 1336px) {}
+@media only screen and (min-width: 700px) and (max-width: 980px) {
+  #header nav {
+    justify-content: space-between;
+
+    .logo {
+
+
+      a {
+
+        img {
+
+        }
+      }
+    }
+
+    ul {
+
+
+      li {
+        margin: 0 20px;
+
+        a {
+
+        }
+
+        a:hover, a:active {
+
+        }
+      }
+    }
+  }
+}

@@ -134,4 +134,53 @@ $white: #fefefd;
 }
 
 
-@media only screen and (min-width: 1100px) and (max-width: 1336px) {}
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  #sidebar {
+    ul {
+
+
+      li {
+
+
+        .item-wrap {
+
+
+          a {
+
+            .featured-post-info {
+
+
+              h3 {
+                font-size: 1.1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .note {
+      font-size: .8rem;
+    }
+
+    .subscribe {
+
+
+      div {
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        input {
+          width: 85%;
+          font-size: 1rem;
+          align-self: center;
+          margin-bottom: 15px;
+        }
+
+        .submit-btn {
+          align-self: center;
+        }
+      }
+    }
+  }
+}
