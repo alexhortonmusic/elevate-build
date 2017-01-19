@@ -1,0 +1,81 @@
+$black: rgba(68, 69, 69, 1);
+$light: rgba(192, 189, 165, 1);
+$pink: rgba(204, 151, 142, 1);
+$orange: rgba(243, 156, 107, 1);
+$red: rgba(255, 56, 100, 1);
+
+#header .landing {
+  background-color: $pink;
+  min-height: 500px;
+  border: 1px solid $black;
+
+  .videoWrap {
+    width: 50%;
+    margin-top: 50px;
+    overflow: hidden;
+
+    h4 {
+      width: 540px;
+      margin: 20px auto;
+      font-size: 2rem;
+    }
+
+    iframe { // width="640" height="360"
+      display: block;
+      height: 300px;
+      width: 540px;
+      border-radius: 2px;
+      margin: 0 auto;
+    }
+
+    .arrowsBtn {
+      margin: 15px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .arrows {
+        width: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .arrow {
+          height: 40px;
+          width: 40px;
+          border: 1px solid $white;
+          border-radius: 2px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          i {
+            color: white;
+            align-self: center;
+          }
+        }
+      }
+
+      .ctaBtn {
+        // width: 200px;
+        height: 40px;
+        background-color: $red;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: row;
+
+        i {
+          color: $white;
+          margin: auto 10px;
+        }
+
+        p {
+          color: $white;
+          font-weight: 300;
+          text-align: center;
+          margin: auto 5px auto 0;
+        }
+      }
+    }
+  }
+}

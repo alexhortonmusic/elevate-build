@@ -1,0 +1,33 @@
+/*
+Theme Name: Adizes Mock
+Theme URI: alexhorton.co
+Author: Alex Horton
+Author URI: alexhorton.co
+Description: Build test for Elevate United's client
+Version: 1.0
+License: MIT
+*/
+
+$black: rgba(68, 69, 69, 1);
+$light: rgba(192, 189, 165, 1);
+$pink: rgba(204, 151, 142, 1);
+$orange: rgba(243, 156, 107, 1);
+$red: rgba(255, 56, 100, 1);
+
+@import 'nav';
+@import 'landing';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
+#header {
+
+}

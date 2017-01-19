@@ -1,0 +1,103 @@
+/*
+Theme Name: Adizes Mock
+Theme URI: alexhorton.co
+Author: Alex Horton
+Author URI: alexhorton.co
+Description: Build test for Elevate United's client
+Version: 1.0
+License: MIT
+*/
+#header nav {
+  background: rgba(68, 69, 69, 0.5);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: fixed; }
+  #header nav .logo {
+    width: 15%;
+    margin-left: 30px; }
+    #header nav .logo a img {
+      height: 50px; }
+  #header nav ul {
+    list-style: none;
+    width: 60%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-self: center; }
+    #header nav ul li {
+      margin: 0 45px; }
+      #header nav ul li a {
+        text-decoration: none;
+        font-weight: 300;
+        color: #fefefd;
+        transition: 0.2s; }
+      #header nav ul li a:hover, #header nav ul li a:active {
+        color: #ff3864;
+        transition: 0.2s; }
+
+#header .landing {
+  background-color: #cc978e;
+  min-height: 500px;
+  border: 1px solid #444545; }
+  #header .landing .videoWrap {
+    width: 50%;
+    margin-top: 50px;
+    overflow: hidden; }
+    #header .landing .videoWrap h4 {
+      width: 540px;
+      margin: 20px auto;
+      font-size: 2rem; }
+    #header .landing .videoWrap iframe {
+      display: block;
+      height: 300px;
+      width: 540px;
+      border-radius: 2px;
+      margin: 0 auto; }
+    #header .landing .videoWrap .arrowsBtn {
+      margin: 15px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      #header .landing .videoWrap .arrowsBtn .arrows {
+        width: 90px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        #header .landing .videoWrap .arrowsBtn .arrows .arrow {
+          height: 40px;
+          width: 40px;
+          border: 1px solid #fefefd;
+          border-radius: 2px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          #header .landing .videoWrap .arrowsBtn .arrows .arrow i {
+            color: white;
+            align-self: center; }
+      #header .landing .videoWrap .arrowsBtn .ctaBtn {
+        height: 40px;
+        background-color: #ff3864;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: row; }
+        #header .landing .videoWrap .arrowsBtn .ctaBtn i {
+          color: #fefefd;
+          margin: auto 10px; }
+        #header .landing .videoWrap .arrowsBtn .ctaBtn p {
+          color: #fefefd;
+          font-weight: 300;
+          text-align: center;
+          margin: auto 5px auto 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
