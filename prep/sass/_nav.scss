@@ -1,16 +1,16 @@
 $black: rgba(68, 69, 69, 1);
 $grey: rgba(192, 189, 165, 1);
 $pink: rgba(204, 151, 142, 1);
-$orange: rgba(243, 156, 107, 1);
-$red: rgba(255, 56, 100, 1);
+$green: #37928E;
+$red: #D12E52;
 $light: #eee9d7;
 $white: #fefefd;
 
 #header nav {
   background: rgba(68, 69, 69, 0.5);
-  // background: rgba(0, 0, 0, 0.3);
   height: 50px;
   width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -53,3 +53,5 @@ $white: #fefefd;
     }
   }
 }
+
+@media only screen and (min-width: 1100px) and (max-width: 1336px) {}

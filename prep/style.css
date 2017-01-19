@@ -11,6 +11,7 @@ License: MIT
   background: rgba(68, 69, 69, 0.5);
   height: 50px;
   width: 100%;
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -35,7 +36,7 @@ License: MIT
         color: #fefefd;
         transition: 0.2s; }
       #header nav ul li a:hover, #header nav ul li a:active {
-        color: #ff3864;
+        color: #D12E52;
         transition: 0.2s; }
 
 #header .landing {
@@ -80,7 +81,7 @@ License: MIT
             align-self: center; }
       #header .landing .videoWrap .arrowsBtn .ctaBtn {
         height: 40px;
-        background-color: #ff3864;
+        background-color: #D12E52;
         border-radius: 2px;
         display: flex;
         flex-direction: row; }
@@ -93,15 +94,20 @@ License: MIT
           text-align: center;
           margin: auto 10px auto 0; }
 
+@media only screen and (min-device-width: 1100px) and (max-device-width: 1336px) {
+  .landing .videoWrap iframe {
+    width: 300px; } }
 .ctaBar {
   padding: 20px 0;
+  height: 170px;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
   .ctaBar .ctaBar-btn {
     border: 1px solid #444545;
+    border-radius: 5px;
     background-color: #c0bda5;
-    height: 130px;
+    height: 100%;
     width: 32%;
     display: flex;
     flex-direction: row;
@@ -125,7 +131,28 @@ License: MIT
       .ctaBar .ctaBar-btn .img-wrap img {
         height: 100px;
         align-self: center; }
+      .ctaBar .ctaBar-btn .img-wrap .ctaRes {
+        display: none; }
 
+@media only screen and (min-width: 1100px) and (max-width: 1336px) {
+  .ctaBar .ctaBar-btn {
+    height: 80%;
+    justify-content: center; }
+    .ctaBar .ctaBar-btn div {
+      width: 60%; }
+      .ctaBar .ctaBar-btn div p:first-child {
+        font-size: 1.4rem; }
+      .ctaBar .ctaBar-btn div p:nth-child(2) {
+        font-size: .8rem; }
+    .ctaBar .ctaBar-btn .img-wrap {
+      width: auto;
+      margin-left: 0;
+      display: block; }
+      .ctaBar .ctaBar-btn .img-wrap img {
+        display: none; }
+      .ctaBar .ctaBar-btn .img-wrap .ctaRes {
+        display: inline;
+        color: #37928E; } }
 #content {
   width: 65%; }
   #content .post {
@@ -138,8 +165,8 @@ License: MIT
       height: 20px; }
       #content .post .post-cat p {
         text-transform: lowercase;
-        font-weight: 400;
-        color: #444545; }
+        font-weight: 300;
+        color: #cc978e; }
     #content .post .post-wrap {
       height: 200px;
       display: flex;
@@ -165,14 +192,14 @@ License: MIT
           margin: 0 auto; }
           #content .post .post-wrap .post-summary .post-details .post-title h2 {
             font-size: 1.5rem;
-            font-weight: 100; }
+            font-weight: 300; }
             #content .post .post-wrap .post-summary .post-details .post-title h2 a {
               text-decoration: none;
               color: #444545; }
           #content .post .post-wrap .post-summary .post-details .post-date {
             font-weight: 300;
             font-size: 0.6rem;
-            color: #c0bda5;
+            color: #444545;
             margin-bottom: 3px; }
           #content .post .post-wrap .post-summary .post-details .entry p {
             font-weight: 300;
@@ -183,7 +210,87 @@ License: MIT
             text-align: right; }
 
 #sidebar {
-  width: 20%; }
+  width: 25%;
+  background: linear-gradient(rgba(55, 146, 142, 0.1), rgba(55, 146, 142, 0.3)), url("./shattered.png");
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px; }
+  #sidebar h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 15px 0 20px; }
+  #sidebar ul {
+    list-style: none; }
+    #sidebar ul li {
+      width: 90%;
+      margin: 0 auto;
+      border-bottom: 2px dotted #c0bda5; }
+      #sidebar ul li .item-wrap {
+        margin: 10px auto;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #sidebar ul li .item-wrap a {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          text-decoration: none; }
+          #sidebar ul li .item-wrap a .post-nail {
+            height: 100%; }
+            #sidebar ul li .item-wrap a .post-nail img {
+              height: 100%;
+              width: 66px;
+              max-height: 50px; }
+          #sidebar ul li .item-wrap a .featured-post-info {
+            margin-left: 20px; }
+            #sidebar ul li .item-wrap a .featured-post-info h3 {
+              text-decoration: none;
+              font-weight: 300;
+              margin: 0;
+              color: #444545; }
+            #sidebar ul li .item-wrap a .featured-post-info p {
+              font-size: 0.6rem;
+              font-weight: 300;
+              color: #444545; }
+    #sidebar ul li:last-child {
+      border-bottom: none; }
+  #sidebar .note {
+    width: 85%;
+    margin: 30px auto 45px;
+    font-weight: 300; }
+    #sidebar .note span {
+      font-weight: 400; }
+  #sidebar .subscribe {
+    width: 85%;
+    margin: 0 auto; }
+    #sidebar .subscribe p {
+      text-align: center; }
+    #sidebar .subscribe div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 15px; }
+      #sidebar .subscribe div input {
+        height: 30px;
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin-right: 5px; }
+      #sidebar .subscribe div .submit-btn {
+        width: 50px;
+        height: 30px;
+        background-color: #eee9d7;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 5px;
+        margin-top: 0;
+        border-radius: 3px;
+        border: 2px solid #37928E; }
+        #sidebar .subscribe div .submit-btn i {
+          color: #37928E;
+          align-self: center; }
 
 * {
   margin: 0;
@@ -196,6 +303,9 @@ body {
   background-attachment: fixed;
   position: absolute;
   color: #444545; }
+
+.page {
+  max-width: 1440px; }
 
 .posts-plus-sidebar {
   display: flex;
