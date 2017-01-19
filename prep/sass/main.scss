@@ -20,6 +20,7 @@ $white: #fefefd;
 @import 'landing';
 @import 'ctaBar';
 @import 'posts';
+@import 'sidebar';
 
 * {
   margin: 0;
@@ -29,6 +30,11 @@ $white: #fefefd;
 
 body {
   font-family: 'Lato', sans-serif;
+  // background-color: $light;
+  background-image: url('./wool.png');
+  background-attachment: fixed;
+  position: absolute;
+  color: $black;
 }
 
 

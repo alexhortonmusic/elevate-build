@@ -7,7 +7,10 @@ $light: #eee9d7;
 $white: #fefefd;
 
 #header .landing {
-  background-color: $pink;
+  // background-color: $pink;
+  background-image: url('./guy-alone.jpg');
+  background-size: cover;
+  background-position: 50% 70%;
   // min-height: 500px;
   // border: 1px solid $black;
 

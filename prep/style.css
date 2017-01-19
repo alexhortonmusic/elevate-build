@@ -39,7 +39,9 @@ License: MIT
         transition: 0.2s; }
 
 #header .landing {
-  background-color: #cc978e; }
+  background-image: url("./guy-alone.jpg");
+  background-size: cover;
+  background-position: 50% 70%; }
   #header .landing .videoWrap {
     width: 50%;
     padding-top: 50px;
@@ -93,7 +95,6 @@ License: MIT
 
 .ctaBar {
   padding: 20px 0;
-  background-color: #eee9d7;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
@@ -125,59 +126,64 @@ License: MIT
         height: 100px;
         align-self: center; }
 
-#content .post {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 90%;
-  margin: 0 auto;
-  border: 1px solid red; }
-  #content .post .post-cat {
-    height: 20px; }
-    #content .post .post-cat p {
-      text-transform: lowercase;
-      font-weight: 400; }
-  #content .post .post-wrap {
-    height: 200px;
+#content {
+  width: 65%; }
+  #content .post {
     display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-    margin-bottom: 20px; }
-    #content .post .post-wrap .post-img {
-      height: 100%; }
-      #content .post .post-wrap .post-img img {
-        height: 100%; }
-    #content .post .post-wrap .post-summary {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto; }
+    #content .post .post-cat {
+      height: 20px; }
+      #content .post .post-cat p {
+        text-transform: lowercase;
+        font-weight: 400;
+        color: #444545; }
+    #content .post .post-wrap {
+      height: 200px;
       display: flex;
-      flex-direction: column; }
-      #content .post .post-wrap .post-summary .post-star {
-        width: 98%;
-        margin: 3px auto 0;
-        text-align: right; }
-        #content .post .post-wrap .post-summary .post-star i {
-          color: goldenrod;
-          font-size: 1.5rem; }
-      #content .post .post-wrap .post-summary .post-details {
-        width: 90%;
-        margin: 0 auto; }
-        #content .post .post-wrap .post-summary .post-details .post-title h2 {
-          font-size: 1.3rem;
-          font-weight: 400; }
-          #content .post .post-wrap .post-summary .post-details .post-title h2 a {
-            text-decoration: none;
-            color: #444545; }
-        #content .post .post-wrap .post-summary .post-details .post-date {
-          font-weight: 300;
-          font-size: 0.6rem;
-          color: #c0bda5;
-          margin-bottom: 3px; }
-        #content .post .post-wrap .post-summary .post-details .entry p {
-          font-weight: 300;
-          font-size: 0.95rem; }
-        #content .post .post-wrap .post-summary .post-details .entry a {
-          display: block;
-          margin-bottom: 10px;
+      flex-direction: row;
+      margin-bottom: 20px;
+      background-color: #eee9d7; }
+      #content .post .post-wrap .post-img {
+        height: 100%; }
+        #content .post .post-wrap .post-img img {
+          height: 100%; }
+      #content .post .post-wrap .post-summary {
+        display: flex;
+        flex-direction: column; }
+        #content .post .post-wrap .post-summary .post-star {
+          width: 98%;
+          margin: 3px auto 0;
           text-align: right; }
+          #content .post .post-wrap .post-summary .post-star i {
+            color: gold;
+            font-size: 1.5rem; }
+        #content .post .post-wrap .post-summary .post-details {
+          width: 90%;
+          margin: 0 auto; }
+          #content .post .post-wrap .post-summary .post-details .post-title h2 {
+            font-size: 1.5rem;
+            font-weight: 100; }
+            #content .post .post-wrap .post-summary .post-details .post-title h2 a {
+              text-decoration: none;
+              color: #444545; }
+          #content .post .post-wrap .post-summary .post-details .post-date {
+            font-weight: 300;
+            font-size: 0.6rem;
+            color: #c0bda5;
+            margin-bottom: 3px; }
+          #content .post .post-wrap .post-summary .post-details .entry p {
+            font-weight: 300;
+            font-size: 0.95rem; }
+          #content .post .post-wrap .post-summary .post-details .entry a {
+            display: block;
+            margin-bottom: 10px;
+            text-align: right; }
+
+#sidebar {
+  width: 20%; }
 
 * {
   margin: 0;
@@ -185,7 +191,11 @@ License: MIT
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  background-image: url("./wool.png");
+  background-attachment: fixed;
+  position: absolute;
+  color: #444545; }
 
 .posts-plus-sidebar {
   display: flex;

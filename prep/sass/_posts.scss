@@ -7,6 +7,7 @@ $light: #eee9d7;
 $white: #fefefd;
 
 #content {
+  width: 65%;
 
   .post {
     display: flex;
@@ -14,13 +15,14 @@ $white: #fefefd;
     justify-content: space-around;
     width: 90%;
     margin: 0 auto;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     .post-cat {
       height: 20px;
       p {
         text-transform: lowercase;
         font-weight: 400;
+        color: $black;
       }
     }
 
@@ -28,8 +30,9 @@ $white: #fefefd;
       height: 200px;
       display: flex;
       flex-direction: row;
-      border: 1px solid black;
+      // border: 1px solid black;
       margin-bottom: 20px;
+      background-color: $light;
 
       .post-img {
         height: 100%;
@@ -48,7 +51,7 @@ $white: #fefefd;
           text-align: right;
 
           i {
-            color: goldenrod;
+            color: gold;
             font-size: 1.5rem;
           }
         }
@@ -60,8 +63,8 @@ $white: #fefefd;
           .post-title {
 
             h2 {
-              font-size: 1.3rem;
-              font-weight: 400;
+              font-size: 1.5rem;
+              font-weight: 100;
 
               a {
                 text-decoration: none;
