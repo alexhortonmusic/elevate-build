@@ -1,0 +1,57 @@
+$black: rgba(68, 69, 69, 1);
+$grey: rgba(192, 189, 165, 1);
+$pink: rgba(204, 151, 142, 1);
+$orange: rgba(243, 156, 107, 1);
+$red: rgba(255, 56, 100, 1);
+$light: #eee9d7;
+$white: #fefefd;
+
+.ctaBar {
+  padding: 20px 0;
+  background-color: $light;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .ctaBar-btn {
+    border: 1px solid $black;
+    background-color: $grey;
+    height: 130px;
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      margin-left: 10px;
+      align-self: center;
+
+      p:first-child {
+        font-size: 2.3rem;
+        font-weight: 100;
+        align-self: center;
+
+        span {
+          font-weight: 400;
+        }
+      }
+
+      p:nth-child(2) {
+        font-weight: 300;
+      }
+    }
+
+
+    .img-wrap {
+      width: 220px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      img {
+        height: 100px;
+        align-self: center;
+      }
+    }
+  }
+}

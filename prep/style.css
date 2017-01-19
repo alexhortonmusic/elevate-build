@@ -39,12 +39,10 @@ License: MIT
         transition: 0.2s; }
 
 #header .landing {
-  background-color: #cc978e;
-  min-height: 500px;
-  border: 1px solid #444545; }
+  background-color: #cc978e; }
   #header .landing .videoWrap {
     width: 50%;
-    margin-top: 50px;
+    padding-top: 50px;
     overflow: hidden; }
     #header .landing .videoWrap h4 {
       width: 540px;
@@ -75,7 +73,7 @@ License: MIT
           flex-direction: column;
           justify-content: center; }
           #header .landing .videoWrap .arrowsBtn .arrows .arrow i {
-            color: white;
+            color: #fefefd;
             align-self: center; }
       #header .landing .videoWrap .arrowsBtn .ctaBtn {
         height: 40px;
@@ -90,7 +88,41 @@ License: MIT
           color: #fefefd;
           font-weight: 300;
           text-align: center;
-          margin: auto 5px auto 0; }
+          margin: auto 10px auto 0; }
+
+.ctaBar {
+  padding: 20px 0;
+  background-color: #eee9d7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .ctaBar .ctaBar-btn {
+    border: 1px solid #444545;
+    background-color: #c0bda5;
+    height: 130px;
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .ctaBar .ctaBar-btn div {
+      margin-left: 10px;
+      align-self: center; }
+      .ctaBar .ctaBar-btn div p:first-child {
+        font-size: 2.3rem;
+        font-weight: 100;
+        align-self: center; }
+        .ctaBar .ctaBar-btn div p:first-child span {
+          font-weight: 400; }
+      .ctaBar .ctaBar-btn div p:nth-child(2) {
+        font-weight: 300; }
+    .ctaBar .ctaBar-btn .img-wrap {
+      width: 220px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .ctaBar .ctaBar-btn .img-wrap img {
+        height: 100px;
+        align-self: center; }
 
 * {
   margin: 0;
