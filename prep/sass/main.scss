@@ -19,6 +19,7 @@ $white: #fefefd;
 @import 'nav';
 @import 'landing';
 @import 'ctaBar';
+@import 'posts';
 
 * {
   margin: 0;
@@ -33,4 +34,11 @@ body {
 
 #header {
 
+}
+
+.posts-plus-sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
 }
