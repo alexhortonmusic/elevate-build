@@ -38,6 +38,10 @@ License: MIT
         color: #D12E52;
         transition: 0.2s; }
 
+.navSolid {
+  background-color: #444545;
+  transition: 0.3s; }
+
 @media only screen and (max-width: 980px) {
   #header nav {
     justify-content: space-between; }
