@@ -24,6 +24,14 @@ $white: #fefefd;
       margin: 0 auto;
     }
 
+    @media screen and (max-width: 720px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 90%;
+    }
+
     h4 {
       width: 540px;
       margin: 20px auto;
@@ -56,6 +64,11 @@ $white: #fefefd;
         width: 360px;
         height: 202.5px;
       }
+
+      @media screen and (max-width: 480px) {
+        width: 300px;
+        height: 168.75px;
+      }
     }
 
     .arrowsBtn {
@@ -64,11 +77,19 @@ $white: #fefefd;
       flex-direction: row;
       justify-content: space-around;
 
+      @media screen and (max-width: 370px) {
+        flex-direction: column;
+      }
+
       .arrows {
         width: 90px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        @media screen and (max-width: 370px) {
+          margin: 0 auto 10px;
+        }
 
         .arrow {
           height: 40px;
@@ -94,6 +115,11 @@ $white: #fefefd;
         display: flex;
         flex-direction: row;
 
+        @media screen and (max-width: 370px) {
+          width: 65%;
+          margin: 0 auto;
+        }
+
         i {
           color: $white;
           margin: auto 10px;
@@ -108,8 +134,4 @@ $white: #fefefd;
       }
     }
   }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 920px) {
-
 }

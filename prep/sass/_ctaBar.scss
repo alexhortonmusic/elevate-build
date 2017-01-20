@@ -180,3 +180,24 @@ $white: #fefefd;
     }
   }
 }
+
+@media screen and (max-width: 420px) {
+  .ctaBar {
+
+    .ctaBar-btn {
+
+      div {
+        margin: 0;
+        width: 100%;
+
+        p:first-child {
+          text-align: center;
+        }
+      }
+
+      .img-wrap {
+        display: none;
+      }
+    }
+  }
+}

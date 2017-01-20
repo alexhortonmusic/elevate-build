@@ -21,28 +21,44 @@ License: MIT
     margin-left: 30px; }
     #header nav .logo a img {
       height: 50px; }
-  #header nav ul {
+  #header nav .nav-links {
     list-style: none;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
     align-self: center; }
-    #header nav ul li {
+    #header nav .nav-links li {
       margin: 0 45px; }
-      #header nav ul li a {
+      #header nav .nav-links li a {
         text-decoration: none;
         font-weight: 300;
         color: #fefefd;
         transition: 0.2s; }
-      #header nav ul li a:hover, #header nav ul li a:active {
+      #header nav .nav-links li a:hover, #header nav .nav-links li a:active {
         color: #D12E52;
         transition: 0.2s; }
 
-@media only screen and (min-width: 700px) and (max-width: 980px) {
+@media only screen and (max-width: 980px) {
   #header nav {
     justify-content: space-between; }
-    #header nav ul li {
+    #header nav .nav-links li {
       margin: 0 20px; } }
+@media screen and (max-width: 680px) {
+  #header nav {
+    flex-direction: column; }
+    #header nav .logo {
+      margin: 5px auto 0; }
+      #header nav .logo a img {
+        height: 20px; }
+    #header nav .nav-links {
+      margin: 0 auto 5px; } }
+@media screen and (max-width: 450px) {
+  .nav-links li {
+    margin: 0 10px; }
+    .nav-links li a {
+      font-size: .7rem; }
+  .nav-links li:first-child {
+    display: none; } }
 #header .landing {
   background-image: url("./guy-alone.jpg");
   background-size: cover;
@@ -54,6 +70,12 @@ License: MIT
     @media screen and (max-width: 1000px) {
       #header .landing .videoWrap {
         margin: 0 auto; } }
+    @media screen and (max-width: 720px) {
+      #header .landing .videoWrap {
+        width: 80%; } }
+    @media screen and (max-width: 480px) {
+      #header .landing .videoWrap {
+        width: 90%; } }
     #header .landing .videoWrap h4 {
       width: 540px;
       margin: 20px auto;
@@ -80,16 +102,26 @@ License: MIT
         #header .landing .videoWrap iframe {
           width: 360px;
           height: 202.5px; } }
+      @media screen and (max-width: 480px) {
+        #header .landing .videoWrap iframe {
+          width: 300px;
+          height: 168.75px; } }
     #header .landing .videoWrap .arrowsBtn {
       margin: 15px 0;
       display: flex;
       flex-direction: row;
       justify-content: space-around; }
+      @media screen and (max-width: 370px) {
+        #header .landing .videoWrap .arrowsBtn {
+          flex-direction: column; } }
       #header .landing .videoWrap .arrowsBtn .arrows {
         width: 90px;
         display: flex;
         flex-direction: row;
         justify-content: space-between; }
+        @media screen and (max-width: 370px) {
+          #header .landing .videoWrap .arrowsBtn .arrows {
+            margin: 0 auto 10px; } }
         #header .landing .videoWrap .arrowsBtn .arrows .arrow {
           height: 40px;
           width: 40px;
@@ -107,6 +139,10 @@ License: MIT
         border-radius: 2px;
         display: flex;
         flex-direction: row; }
+        @media screen and (max-width: 370px) {
+          #header .landing .videoWrap .arrowsBtn .ctaBtn {
+            width: 65%;
+            margin: 0 auto; } }
         #header .landing .videoWrap .arrowsBtn .ctaBtn i {
           color: #fefefd;
           margin: auto 10px; }
@@ -194,6 +230,14 @@ License: MIT
           display: none; }
       .ctaBar .ctaBar-btn .img-wrap .ctaRes {
         color: #fefefd; } }
+@media screen and (max-width: 420px) {
+  .ctaBar .ctaBar-btn div {
+    margin: 0;
+    width: 100%; }
+    .ctaBar .ctaBar-btn div p:first-child {
+      text-align: center; }
+  .ctaBar .ctaBar-btn .img-wrap {
+    display: none; } }
 #content {
   width: 65%; }
   #content .post {
@@ -253,7 +297,7 @@ License: MIT
 @media only screen and (min-width: 1100px) and (max-width: 1336px) {
   #content {
     width: 72%; } }
-@media only screen and (min-width: 768px) and (max-width: 1099px) {
+@media only screen and (max-width: 1099px) {
   #content .post .post-wrap {
     height: 80px; }
     #content .post .post-wrap .post-summary {
@@ -270,6 +314,13 @@ License: MIT
         align-self: center; }
         #content .post .post-wrap .post-summary .post-details .entry {
           display: none; } }
+@media only screen and (max-width: 600px) {
+  #content {
+    width: 100%; }
+    #content .post {
+      width: 90%; }
+      #content .post .post-wrap .post-summary .post-details .post-title h2 {
+        font-size: 1.2rem; } }
 #sidebar {
   width: 25%;
   background: linear-gradient(rgba(55, 146, 142, 0.1), rgba(55, 146, 142, 0.3)), url("./shattered.png");
@@ -353,7 +404,7 @@ License: MIT
           color: #37928E;
           align-self: center; }
 
-@media only screen and (min-width: 768px) and (max-width: 1100px) {
+@media only screen and (max-width: 1100px) {
   #sidebar ul li .item-wrap a .featured-post-info h3 {
     font-size: 1.1rem; }
   #sidebar .note {
@@ -368,6 +419,19 @@ License: MIT
       margin-bottom: 15px; }
     #sidebar .subscribe div .submit-btn {
       align-self: center; } }
+@media screen and (max-width: 750px) {
+  .item-wrap a .post-nail {
+    display: none; } }
+@media screen and (max-width: 600px) {
+  #sidebar {
+    width: 90%;
+    margin: 0 auto 30px; }
+
+  .featured-post-info h3 {
+    font-size: 1.5rem; }
+
+  .item-wrap a .post-nail {
+    display: block; } }
 * {
   margin: 0;
   padding: 0;
@@ -391,5 +455,10 @@ body {
   @media screen and (max-width: 1336px) {
     .posts-plus-sidebar {
       margin-top: 0; } }
+  @media screen and (max-width: 600px) {
+    .posts-plus-sidebar {
+      flex-direction: column;
+      width: 85%;
+      margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */

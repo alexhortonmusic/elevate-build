@@ -111,7 +111,7 @@ $white: #fefefd;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1099px) {
+@media only screen and (max-width: 1099px) {
   #content {
 
     .post {
@@ -138,6 +138,46 @@ $white: #fefefd;
 
             .entry {
               display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #content {
+    width: 100%;
+
+    .post {
+      width: 90%;
+
+      .post-wrap {
+
+
+        .post-summary {
+
+
+          .post-star {
+
+            i {
+
+            }
+          }
+
+          .post-details {
+
+            .post-title {
+
+              h2 {
+                font-size: 1.2rem;
+
+                a {
+
+
+                }
+              }
             }
           }
         }
