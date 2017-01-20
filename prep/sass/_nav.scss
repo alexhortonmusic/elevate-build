@@ -54,11 +54,6 @@ $white: #fefefd;
   }
 }
 
-.navSolid {
-  background-color: $black;
-  transition: 0.3s;
-}
-
 @media only screen and (max-width: 980px) {
   #header nav {
     justify-content: space-between;

@@ -5,23 +5,15 @@ Author: Alex Horton
 Author URI: alexhorton.co
 Description: Build test for Elevate United's client
 Version: 1.0
-License: MIT
 */
 
 $black: rgba(68, 69, 69, 1);
 $grey: rgba(192, 189, 165, 1);
 $pink: rgba(204, 151, 142, 1);
-// $green: rgba(55, 146, 142, 1);
-$green: #37928E;
+$green: rgba(55, 146, 142, 1);
 $red: #D12E52;
 $light: #eee9d7;
 $white: #fefefd;
-
-@import 'nav';
-@import 'landing';
-@import 'ctaBar';
-@import 'posts';
-@import 'sidebar';
 
 * {
   margin: 0;
@@ -31,7 +23,6 @@ $white: #fefefd;
 
 body {
   font-family: 'Lato', sans-serif;
-  // background-color: $light;
   background-image: url('./wool.png');
   background-attachment: fixed;
   position: absolute;
@@ -63,3 +54,10 @@ body {
     margin: 0 auto;
   }
 }
+
+@import 'nav';
+@import 'landing';
+@import 'ctaBar';
+@import 'posts';
+@import 'sidebar';
+@import 'dynamicClasses';

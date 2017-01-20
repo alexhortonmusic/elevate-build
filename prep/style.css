@@ -5,8 +5,36 @@ Author: Alex Horton
 Author URI: alexhorton.co
 Description: Build test for Elevate United's client
 Version: 1.0
-License: MIT
 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url("./wool.png");
+  background-attachment: fixed;
+  position: absolute;
+  color: #444545; }
+
+.page {
+  max-width: 1440px; }
+
+.posts-plus-sidebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px; }
+  @media screen and (max-width: 1336px) {
+    .posts-plus-sidebar {
+      margin-top: 0; } }
+  @media screen and (max-width: 600px) {
+    .posts-plus-sidebar {
+      flex-direction: column;
+      width: 85%;
+      margin: 0 auto; } }
+
 #header nav {
   background: rgba(68, 69, 69, 0.5);
   height: 50px;
@@ -37,10 +65,6 @@ License: MIT
       #header nav .nav-links li a:hover, #header nav .nav-links li a:active {
         color: #D12E52;
         transition: 0.2s; }
-
-.navSolid {
-  background-color: #444545;
-  transition: 0.3s; }
 
 @media only screen and (max-width: 980px) {
   #header nav {
@@ -436,33 +460,12 @@ License: MIT
 
   .item-wrap a .post-nail {
     display: block; } }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Lato', sans-serif;
-  background-image: url("./wool.png");
-  background-attachment: fixed;
-  position: absolute;
-  color: #444545; }
-
-.page {
-  max-width: 1440px; }
-
-.posts-plus-sidebar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 30px; }
-  @media screen and (max-width: 1336px) {
-    .posts-plus-sidebar {
-      margin-top: 0; } }
-  @media screen and (max-width: 600px) {
-    .posts-plus-sidebar {
-      flex-direction: column;
-      width: 85%;
-      margin: 0 auto; } }
+/*-----------------------------------
+-----Dynamically added classes-------
+------------------------------------*/
+/*------Nav Bar-----*/
+.navSolid {
+  background-color: rgba(68, 69, 69, 0.9) !important;
+  transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */
